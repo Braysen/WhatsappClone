@@ -32,16 +32,16 @@ function Sidebar() {
         <div className="sidebar">
             <div className="sidebar__header">
                 <Avatar src={user?.photoURL}/>
-                <div className="sidebar__headerRight">
                 <p>{user?.displayName}</p>
+                <div className="sidebar__headerRight">
                     <IconButton>
-                        <DonutLargeIcon/>
+                        <DonutLargeIcon style={{color: '#919191'}}/>
                     </IconButton>
                     <IconButton>
-                        <ChatIcon/>
+                        <ChatIcon style={{color: '#919191'}}/>
                     </IconButton>
                     <IconButton>
-                        <MoreVertIcon/>
+                        <MoreVertIcon style={{color: '#919191'}}/>
                     </IconButton>    
                 </div>
             </div>

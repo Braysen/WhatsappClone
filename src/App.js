@@ -14,22 +14,27 @@ function App() {
       {!user ? (
         <Login/>
       ):(
-        <div className="app__body">
-          <Router>
-            <Sidebar/>
+        <>
+          <div className="app__header">
 
-            <Switch>
-              <Route path="/rooms/:roomId">
-                <Chat/>
-              </Route>
+          </div>
+          <div className="app__body">
+            <Router>
+              <Sidebar/>
 
-              <Route path="/">
-                <Chat/>
-              </Route>
+              <Switch>
+                <Route path="/rooms/:roomId">
+                  <Chat/>
+                </Route>
 
-            </Switch>
-          </Router>
-        </div>
+                <Route path="/">
+                  <Chat/>
+                </Route>
+
+              </Switch>
+            </Router>
+          </div>
+        </>
       )}
     </div>
   );

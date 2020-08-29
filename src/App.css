@@ -1,15 +1,25 @@
 .app{
   display: grid;
   place-items: center;
-  background: #dadbd3;
+  background: #D9DBD6;/*dadbd3*/
   height: 100vh;
+}
+/*Nuevo*/
+.app__header{
+  height: 17.5vh;
+  width: 100vw;
+  background: #009688;
+  z-index: 0;
+  display: flex;
+  position: absolute;
 }
 
 .app__body{
   display: flex;
   background-color: #ededed;
-  margin-top: -50px;
-  height: 90vh;
-  width: 90vw;
+  /*margin-top: -50px;*/
+  height: 95vh;/*90vh*/
+  width: 91vw;/*90vw*/
   box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.7);
+  z-index: 10;/*Nuevo*/
 }
